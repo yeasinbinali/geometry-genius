@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ccebff;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}

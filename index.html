@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar px-8">
+            <div class="flex-1 block">
+                <h1 class="text-3xl font-bold">Interactive</h1>
+                <p class="text-xl">Geometry Genius</p>
+            </div>
+            <div class="flex-none">
+                <button class="btn btn-sm btn-info text-white">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="w-3/4 grid grid-cols-3 gap-5">
+            <div class="card bg-base-100 border-2 pt-5">
+                <figure>
+                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area(A) = 0.5 X b X h</p>
+                    <div class="flex justify-center items-center my-4">
+                        <div>
+                            <input class="border-2 w-16" type="text" placeholder="b" name="" id="base-input">
+                            <span>cm</span>
+                        </div>
+                        <div class="ml-4">
+                            <input class="border-2 w-16" type="text" placeholder="h" name="" id="height-input">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button onclick="buttonTriangle()" class="btn btn-sm text-white w-full btn-info">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/4 border-2 rounded-xl">
+            <h6 class="text-center text-xl font-bold underline">Area Calculation</h6>
+            <p class="text-center my-10 text-xl">Total Area: <span id="area-output">0</span><span> cm</span></p>
+        </div>
+    </main>
+
+    <script src="js/triangle-calculate.js"></script>
+</body>
+
+</html>
